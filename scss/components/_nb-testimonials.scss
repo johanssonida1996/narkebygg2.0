@@ -1,0 +1,29 @@
+#nb-testimonials{
+   > div{
+      > div{
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+      }
+   }
+   .carousel-inner{
+      display: flex;
+      .carousel-item{
+         text-align: center;
+         padding: 0 32px;
+         > div{
+            max-width: 700px;
+            margin: 0 auto;
+         }
+        q{
+         font-style: italic;
+        }
+        p{
+         margin: 2rem;
+        }
+      }
+   }
+   button{
+      color: blue;
+   }
+}

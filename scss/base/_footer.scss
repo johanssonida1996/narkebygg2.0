@@ -1,0 +1,48 @@
+.nb-footer{
+   background-color: $primary-color;
+   padding: 1rem 32px;
+   color: $white;
+   &__info{
+      .row{
+         padding: 4rem 0;
+         h3{
+            margin: 0 0 1rem 0;
+         }
+         h4{
+            font-size: 1.25rem;
+         }
+         p{
+            font-size: 1rem;
+            font-weight: 500;
+         }
+         a{
+            color: $white;
+            text-decoration: none;
+            display: inline-flex; 
+            align-items: center;
+            &:hover{
+               text-decoration: underline;
+            }
+            i{
+               font-size: 1.5rem;
+               transition: transform 0.3s ease;
+               transform-origin: center;
+               &:hover{
+                  transform: scale(1.2);
+               }
+            }
+         }
+         @media (max-width: 767px){
+            .col-md-4 {
+               margin-bottom: 2rem;
+            }
+         }
+
+      }
+   }
+   &__text{
+      p{
+         color: $white;
+      }
+   }
+}

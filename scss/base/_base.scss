@@ -1,0 +1,88 @@
+body {
+   margin: 0;
+   background-color: $white;
+   font-family: $roboto;
+   font-weight: $regular;
+   font-size: $normal;
+   color: $black;
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   position: relative;
+}
+hr {
+   margin: 1rem 0;
+   color: inherit;
+   border: 0;
+   border-top: 1px solid;
+   opacity: 0.25;
+}
+.container-fluid {
+   padding: 0;
+   max-width: $grid-width;
+   margin: 0 auto;
+}
+nav,
+footer{
+a:focus-visible,
+   img:focus-visible {
+      outline: 2px solid $white !important;
+      box-shadow: $box-shadow !important;
+   }
+   a:-webkit-any-link:focus-visible {
+      outline-offset: 5px !important;
+   }
+}
+a:focus-visible,
+img:focus-visible {
+   outline: 2px solid $black !important;
+   box-shadow: $box-shadow !important;
+}
+a:-webkit-any-link:focus-visible {
+   outline-offset: 5px !important;
+}
+.nb-padding {
+   padding: 1rem 32px;
+}
+
+#nb-whyUs,
+#nb-about,
+#nb-services,
+#nb-testimonials {
+   padding: 6rem 32px;
+}
+.nb-background{
+   background-color: $primary-color !important;
+}
+.nb-flex-reverse{
+   flex-direction: row-reverse;
+
+   @media (max-width: 992px){
+      flex-direction: column;
+   }
+}
+.slide-up {
+   opacity: 0;
+   transform: translateY(50px);
+   animation: slideUp 3s ease forwards;
+ }
+ 
+ @keyframes slideUp {
+   from {
+     opacity: 0;
+     transform: translateY(50px);
+   }
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+ .slide-transition {
+   opacity: 0;
+   transform: translateY(50px);
+   transition: opacity 1.5s ease, transform 1.5s ease;
+ }
+ 
+ .slide-transition.visible {
+   opacity: 1;
+   transform: translateY(0);
+ }

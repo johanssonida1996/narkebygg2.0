@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hem | Närke bygg</title>
+    <link rel="icon" href="assets/favicon_io/favicon-32x32.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="nb-nav" class="navbar navbar-expand-lg">
+      <div class="container-fluid nb-padding nb-nav">
+        <a class="navbar-brand" href="index.html">Närke Bygg</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse nb-nav__menu" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#nb-header">Hem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nb-about">Om oss</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nb-services">Tjänster</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nb-testimonials">Referenser</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nb-nav__links">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/narkebyggab/"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="mailto:info@narkebygg.se"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="tel:0705273570"><i class="bi bi-telephone" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+    <header id="nb-header">
+      <div class="nb-header">
+        <div class="nb-header__image">
+          <img src="assets/img/bakgrund.webp" alt="Herobild- En man som skruvar med en skruvdragare" />
+        </div>
+        <div class="nb-header__text">
+          <h1 class="slide-up">Närke Bygg</h1>
+          <p class="slide-up"><i>Byggkompetens sedan 2008</i></p>
+        </div>
+      </div>
+    </header>
+    <div></div>
+    <main class="main">
+      <!-- section - testimonials -->
+      <section id="nb-testimonials" class="nb-greySection">
+        <div class="container-fluid slide-transition">
+          <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div>
+                  <q>Oerhört nöjd med det utförda arbetet. Trevligt möte med samtliga inblandade från Närke bygg</q>
+                  <p>Kent Larsson, Kumla</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div>
+                  <q>Vilket gäng, hade kanonbra snickare hos oss. Lyhörda och oerhört effektiva. 
+                    Jag kommer definitivt att rekommendera Närke Bygg till andra som jag känner som behöver liknande hjälp.</q>
+                  <p>Anders Andersson, Örebro</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div>
+                  <q>Närke bygg är mycket trevliga mot sina kunder och varje gång har jag fått hjälp direkt utan att behöva vänta en längre stund. 
+                    De utstrålar kvalitet och bra företagande.</q>
+                  <p>Berit Bengtsson, Kumla</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div>
+                  <q>Jag kan varmt rekommendera Närke bygg eftersom de har fantastiskt bra service och levererar alltid i tid. 
+                    Ska jag bygga om i framtiden kommer jag garanterat ringa Närke bygg.</q>
+                  <p>Arne Svensson, Glanshammar</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- section - About -->
+      <section id="nb-about">
+        <div class="container-fluid nb-section slide-transition">
+          <div class="col-lg-6 nb-section__image">
+            <img src="assets/img/bakgrund.webp" alt="Herobild- En man som skruvar med en skruvdragare" />
+          </div>
+          <div class="col-lg-6 nb-section__content">
+            <h2>Om oss</h2>
+            <p>
+              Närke Bygg AB etablerades år 2008 av Matthias Johansson och har sedan dess varit en välkänd aktör inom byggbranschen.
+              <br>
+              <br>
+              Vår affärsstrategi har kontinuerligt utvecklats för att positionera oss som en ledande aktör på marknaden. 
+              Vi strävar efter att behålla vårt småskaliga tillvägagångssätt för att minimera overheadkostnader samtidigt som vi driver vår verksamhet med ambitiösa målsättningar. 
+              Vårt främsta mål är att hantera totalentreprenader med en omfattning på 5-15 MSEK.</p>
+          </div>
+        </div>
+      </section>
+      <!-- section - services -->
+      <section id="nb-services" class="nb-greySection">
+        <div class="container-fluid nb-services slide-transition">
+          <h2>Våra tjänster</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-box">
+                <div class="text-overlay">
+                  <h3>Kök</h3>
+                </div>
+                <img src="assets/img/kitchen.webp" alt="Kök">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-box">
+                <div class="text-overlay">
+                  <h3>Badrum</h3>
+                </div>
+                <img src="assets/img/bathroom.webp" alt="Badrum">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-box">
+                <div class="text-overlay">
+                  <h3>Fönster</h3>
+                </div>
+                <img src="assets/img/window.webp" alt="Fönster">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-box">
+                <div class="text-overlay">
+                  <h3>Tak</h3>
+                </div>
+                <img src="assets/img/roof.webp" alt="Tak">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>      
+      <!-- section - remove? -->
+      <section id="nb-services">
+        <div class="container-fluid nb-section nb-flex-reverse slide-transition">
+          <div class="col-lg-6 nb-section__image">
+            <img src="assets/img/bakgrund.webp" alt="Herobild- En man som skruvar med en skruvdragare" />
+          </div>
+          <div class="col-lg-6 nb-section__content">
+            <h2>Varför välja oss</h2>
+            <p>
+              <b>Vår Affärsidé</b>
+              <br>
+              Vi bygger vår affärsidé på lyhördhet gentemot våra kunders förväntningar. 
+              Detta skapar grunden för ett samarbete baserat på förtroende och respekt för varandras kompetens och åsikter.
+              <br>
+              <br>
+              <b>Vår Vision</b>
+              <br>
+              Vi strävar efter att leverera en fullständig och felfri slutprodukt till varje projekt. 
+              Vår vision är att vara ledande inom branschen när det gäller kvalitet och professionalism.
+              <br>
+              <br>
+              <b>Vår Mission</b>
+              <br>
+              Vårt uppdrag är att hålla en stark fokus på kunden. 
+              Vi värdesätter ärlighet gentemot både kunder och medarbetare och strävar efter att göra varje beställare och projekt till en referenspunkt för vår kompetens och pålitlighet.
+              <br>
+              <br>
+              <b>Våra Mål</b>
+              <br>
+              Vi har satt upp tydliga mål för oss själva. 
+              Det är att leverera material och arbete till rätt pris och att alltid slutföra påbörjade projekt inom det uppsatta tidsperspektivet. Vi tar ansvar även när det uppstår felkalkyleringar eller missbedömningar av arbetet för att säkerställa att våra kunder är nöjda med slutresultatet.
+              <br>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer id="nb-footer" class="nb-footer">
+      <div class="container-fluid nb-footer__info .slide-transition">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Närke bygg AB</h3>
+            <h4>Orgnr 556758-4262</h4>
+          </div>
+          <div class="col-md-4">
+            <h3>Kontakt</h3>
+            <h4>Matthias Johansson</h4>
+            <p>Telefon <br /><a href="tel:0706542735">0706542735</a></p>
+            <p>
+              Email <br />
+              <a href="mailto:info@narkebygg.se">info@narkebygg.se</a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3>Sociala Medier</h3>
+            <a href="https://www.instagram.com/narkebyggab/"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid nb-footer__text">
+        <p class="text-center">© Copyright 2023</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>

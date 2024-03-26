@@ -1,0 +1,11 @@
+@import 'utils/variables';
+
+@import "components/nb-section",
+        "components/nb-greySection",
+        "components/nb-services",
+        "components/nb-testimonials";
+
+@import "base/header",
+        "base/nav",
+        "base/footer",
+        "base/base";
