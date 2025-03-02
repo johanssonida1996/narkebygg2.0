@@ -1,10 +1,10 @@
 #nb-header {
-   min-height: 112vh;
+   min-height: 100vh;
    width: 100%;
    position: relative;
    overflow: hidden; /* För att säkerställa att bilden inte läcker utanför nb-header */
    z-index: -1;
-   margin-top: -112px; /* Justera för headerens höjd */
+   margin-top: -122px; /* Justera för headerens höjd */
  
    .nb-header__image {
      position: absolute;
@@ -40,15 +40,37 @@
      color: $white;
      text-align: center;
      z-index: 1; 
+     width: 100%;
      h1{
       font-size: $h1;
       text-transform: uppercase;
       font-weight: 600;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
      }
      p{
-      font-size: 2rem;
+      font-size: 1.25rem;
       font-weight: 600;
-      max-width: 700px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+     }
+
+     &--button{
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      button{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        border-radius: 6px;
+        padding: 1rem;
+        background-color: $primary-color;
+        &:hover{
+          cursor: pointer;
+        }
+      }
      }
    }
  }

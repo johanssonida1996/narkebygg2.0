@@ -1,0 +1,52 @@
+.nb-contact{
+   .nb-contact-links{
+      padding: 2rem 32px;
+      @media (max-width: 992px){
+         padding:0;
+      }
+      &__link{
+         display: flex;
+         margin-bottom: 2rem;
+         &--icon{
+            background-color: $primary-color;
+            color: $white;
+            padding: 1rem 1.5rem;
+            font-size: 1.5rem;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem;
+
+         }
+         &--link{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            p{
+               margin: 0;
+               margin-bottom: 0.5rem;
+               font-weight: 500;
+            }
+            a{
+               color: $black;
+               text-decoration: none;
+               &:hover{
+                  text-decoration: underline;
+               }
+            }
+         }
+      }
+
+   }
+   .nb-contact-info{
+      padding: 2rem 32px;
+      @media (max-width: 992px){
+         padding:0;
+      }
+      > div{
+         margin-bottom: 4rem;
+      }
+   }
+}

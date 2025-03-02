@@ -34,7 +34,7 @@ a:focus-visible,
 }
 a:focus-visible,
 img:focus-visible {
-   outline: 2px solid $black !important;
+   outline: 2px solid $primary-color !important;
    box-shadow: $box-shadow !important;
 }
 a:-webkit-any-link:focus-visible {
@@ -44,9 +44,9 @@ a:-webkit-any-link:focus-visible {
    padding: 1rem 32px;
 }
 
-#nb-whyUs,
-#nb-about,
-#nb-services,
+.nb-contact,
+.nb-about,
+.nb-services,
 #nb-testimonials {
    padding: 6rem 32px;
 }
@@ -57,7 +57,7 @@ a:-webkit-any-link:focus-visible {
    flex-direction: row-reverse;
 
    @media (max-width: 992px){
-      flex-direction: column;
+      flex-direction: column-reverse;
    }
 }
 .slide-up {

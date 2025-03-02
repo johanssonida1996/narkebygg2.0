@@ -13,8 +13,8 @@ $roboto: "Roboto", sans-serif;
 // Font size
 $normal: 1rem;
 $text: 1rem;
-$h1: 5rem;
-$h2: 3rem;
+$h1: 3rem;
+$h2: 2.5rem;
 $h3: 1.5rem;
 $ingress: 1.25rem;
 $line-height: 1.5;
@@ -28,6 +28,13 @@ $bold: 700;
 $solid: 900;
 
 // Container
-$grid-width: 1440px;
+$grid-width: 1360px;
 $transition: all 0.3s ease-in-out;
 $box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+//focus
+$outline-offset: 3px;
+$outline: 2px; 
+$outline-offset-color-white: $white;
+$outline-offset-color-white: $primary-color;
+

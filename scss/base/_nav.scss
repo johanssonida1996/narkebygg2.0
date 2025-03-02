@@ -5,14 +5,15 @@
    align-items: center;
    z-index: 99;
    transition: 0.3s ease-in-out;
-   padding: 1rem 0;
    .nb-nav {
+      padding: 1rem 0;
       .navbar-brand {
-         font-size: 1.5rem;
+         font-size: 2rem;
          text-transform: uppercase;
          color: $white;
          font-weight: 600;
          transition: transform 0.3s ease;
+         text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 
          &:hover {
             cursor: pointer;
@@ -30,6 +31,7 @@
                      font-weight: 500;
                      position: relative;
                      font-size: 1rem;
+                     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
                      &::before,
                      &::after {
                         transition: all 0.5s;
@@ -48,6 +50,7 @@
                         color: transparent;
                         background: $white;
                         height: 1px;
+                        text-shadow: none;
                      }
                      &:hover::after {
                         width: 80%;
@@ -72,6 +75,7 @@
                a {
                   display: inline-flex; /* Lägg till detta */
                   align-items: center; /* Centrera innehållet vertikalt */
+                  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 
                   i {
                      font-size: 1.2rem;
@@ -97,10 +101,29 @@
    @media (max-width: 991px) {
       .nb-nav {
          button{
-            border-color: $white;
-            i{
+            border-color: transparent;
+            &:active,
+            &:focus{
+               outline: 2px solid $white !important;
+               box-shadow: none;
+            }
+            &::before{
+               content: "\f0c9";
+               font-family: 'Font Awesome\ 6 Free';
+               font-size: 1.5rem;
+               font-weight: 600;
+               display: inline-block;
                color: $white;
-               font-size: 2rem;
+            }
+         }
+         button.open{
+            &::before{
+               content: "\f00d";
+               font-family: 'Font Awesome\ 6 Free';
+               font-size: 1.5rem;
+               font-weight: 600;
+               display: inline-block;
+               color: $white;
             }
          }
          &__menu {
@@ -154,4 +177,16 @@
    background: $primary-color;
    box-shadow: $box-shadow;
    transition: 0.3s ease-in-out;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+   .navbar-brand {
+      text-shadow: none;
+   }
+ 
+   .nb-nav__menu ul li a {
+      text-shadow: none !important;
+   }
+   i{
+      text-shadow: none !important;
+   }
 }

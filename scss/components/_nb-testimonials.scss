@@ -1,4 +1,13 @@
 #nb-testimonials{
+   .nb-testimonials-heading{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      h2{
+         font-size: $h3;
+         text-align: center;
+      }
+   }
    > div{
       > div{
          display: flex;
@@ -17,6 +26,7 @@
          }
         q{
          font-style: italic;
+         font-size: 1.125rem;
         }
         p{
          margin: 2rem;
@@ -24,6 +34,12 @@
       }
    }
    button{
-      color: blue;
+      display: none;
+      .carousel-control-next-icon{
+        display: none;
+      }
+      .carousel-control-prev-icon{
+         display: none;
+      }
    }
 }
