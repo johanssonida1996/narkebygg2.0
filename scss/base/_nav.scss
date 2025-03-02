@@ -130,12 +130,13 @@
             justify-content: unset;
             ul {
                li {
+                  margin: 0.5rem 0;
                   a {
-                     padding: 1.5rem 0rem 0.2rem 0.5rem!important;
                      text-transform: uppercase;
                      color: $white;
                      font-weight: 500;
                      position: relative;
+                     width: fit-content;
                      &::before,
                      &::after {
                         transition: all 0.5s;
@@ -155,10 +156,10 @@
                         height: 1px;
                      }
                      &:hover::after {
-                        width: 10%;
+                        width: 100%;
                      }
                      &.active::after {
-                        width: 10%;
+                        width: 100%;
                      }
                   }
                }

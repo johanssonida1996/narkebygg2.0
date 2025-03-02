@@ -372,12 +372,15 @@
   #nb-nav .nb-nav__menu {
     justify-content: unset;
   }
+  #nb-nav .nb-nav__menu ul li {
+    margin: 0.5rem 0;
+  }
   #nb-nav .nb-nav__menu ul li a {
-    padding: 1.5rem 0rem 0.2rem 0.5rem !important;
     text-transform: uppercase;
     color: #fff;
     font-weight: 500;
     position: relative;
+    width: fit-content;
   }
   #nb-nav .nb-nav__menu ul li a::before, #nb-nav .nb-nav__menu ul li a::after {
     transition: all 0.5s;
@@ -397,10 +400,10 @@
     height: 1px;
   }
   #nb-nav .nb-nav__menu ul li a:hover::after {
-    width: 10%;
+    width: 100%;
   }
   #nb-nav .nb-nav__menu ul li a.active::after {
-    width: 10%;
+    width: 100%;
   }
   #nb-nav .nb-nav__links {
     display: none;
